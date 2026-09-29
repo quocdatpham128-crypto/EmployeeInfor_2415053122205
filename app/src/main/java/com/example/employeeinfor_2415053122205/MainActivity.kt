@@ -10,12 +10,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Sử dụng ViewBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Khởi tạo đối tượng nhân viên từ Model
         val nhanVienDoiTuong = NhanVien(
             maNhanVien = "NV2415053122205",
             hoTen = "Phạm Quốc Đạt",
@@ -29,7 +26,6 @@ class MainActivity : AppCompatActivity() {
 
         val luongChuanMoiThang = 10000000.0
 
-        // Gán dữ liệu lên giao diện qua ViewBinding
         binding.tvMaNhanVien.text = "Mã NV: ${nhanVienDoiTuong.maNhanVien}"
         binding.tvHoTen.text = "Họ tên: ${nhanVienDoiTuong.layTenVietHoa()}"
         binding.tvPhongBan.text = "Phòng ban: ${nhanVienDoiTuong.phongBan}"
