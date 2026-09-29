@@ -8,6 +8,7 @@ android {
         version = release(37)
     }
 
+
     defaultConfig {
         applicationId = "com.example.employeeinfor_2415053122205"
         minSdk = 24
@@ -16,6 +17,9 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding  = true
     }
 
     buildTypes {
